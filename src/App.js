@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { Sky } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
 
 function App() {
   return (
     <>
-      <canvas></canvas>
+      <div>Outside of canvas</div>
+      <Canvas>
+        <Sky />
+      </Canvas>
     </>
   );
 }
